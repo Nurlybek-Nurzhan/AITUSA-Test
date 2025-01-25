@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# Nurlybek Nurzhan SE-2432 | AITUSA ToDo App | React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -18,11 +18,11 @@ export default tseslint.config({
   languageOptions: {
     // other options...
     parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
       tsconfigRootDir: import.meta.dirname,
     },
   },
-})
+});
 ```
 
 - Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
@@ -31,11 +31,11 @@ export default tseslint.config({
 
 ```js
 // eslint.config.js
-import react from 'eslint-plugin-react'
+import react from "eslint-plugin-react";
 
 export default tseslint.config({
   // Set the react version
-  settings: { react: { version: '18.3' } },
+  settings: { react: { version: "18.3" } },
   plugins: {
     // Add the react plugin
     react,
@@ -44,7 +44,19 @@ export default tseslint.config({
     // other rules...
     // Enable its recommended rules
     ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
+    ...react.configs["jsx-runtime"].rules,
   },
-})
+});
 ```
+
+## Short explanation for each folder and file:
+
+- `public` : Common static files (e.g., images, icons, fonts) and index.html used by the entire app. These files are directly served without processing.
+- `assets` : Component-specific static files like images, icons, or fonts.
+- `components` : Reusable UI components that make up your app (e.g., forms, lists, buttons).
+- `constants` : Centralized static values or configurations (e.g., app settings, API URLs).
+- `store` : Redux Toolkit slices and global state management logic.
+- `utils` : Helper functions (e.g., localStorage handling, date formatting) to avoid repeated logic.
+- `App.tsx` : The main app container, where routes and global providers (like Redux) are set up.
+- `main.tsx` : App entry point; mounts App.tsx into the DOM and initializes global configurations.
+- `vite.env.d.ts` : TypeScript definitions for Vite-specific features like import.meta.
