@@ -56,6 +56,7 @@ export default tseslint.config({
 - `components` : Reusable UI components that make up your app (e.g., forms, lists, buttons).
 - `constants` : Centralized static values or configurations (e.g., app settings, API URLs).
 - `store` : Redux Toolkit slices and global state management logic.
+- `styles` : Necessary files for styling (reset and modules)
 - `utils` : Helper functions (e.g., localStorage handling, date formatting) to avoid repeated logic.
 - `App.tsx` : The main app container, where routes and global providers (like Redux) are set up.
 - `main.tsx` : App entry point; mounts App.tsx into the DOM and initializes global configurations.

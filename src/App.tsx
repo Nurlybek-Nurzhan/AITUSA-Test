@@ -1,14 +1,11 @@
-function App() {
+import React from "react";
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <h1>Niggers</h1>
-      <h2>Niggers</h2>
-      <h3>Niggers</h3>
-      <h4>Niggers</h4>
-      <h5>Niggers</h5>
-      <h6>Niggers</h6>
+    <div className="container mx-auto p-4 mt-4">
+      <h1 className="text-xl font-bold mb-4">Task Manager</h1>
     </div>
   );
-}
+};
 
 export default App;
